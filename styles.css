@@ -131,7 +131,7 @@ section p {
 }
 
 .banner-area .banner-img {
-  background-image: url("../makeROI/makeROI_v000/images/main_plant.png");
+  background-image: url("./images/main_plant.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -168,5 +168,46 @@ section p {
   background-color: crimson;
   border-radius: 50px;
   text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .banner-area {
+    min-height: 600px;
+  }
+  .banner-area h1 {
+    font-size: 32px;
+  }
+  .banner-area h3 {
+    font-size: 20px;
+  }
+  .banner-area a.banner-btn {
+    padding: 15px 40px;
+  }
+}
+
+ul.about-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-content li {
+  padding: 20px;
+  height: 290px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-image: url("./images/kecubung_01.png");
 }
 /*# sourceMappingURL=styles.css.map */
